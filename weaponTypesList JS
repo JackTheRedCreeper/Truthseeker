@@ -1,0 +1,8 @@
+for (var i = 0; i < jsonobject.length; i++) {
+	var text = '{"name":"'+jsonobject[i].name+'", "type":"'+jsonobject[i].type+'"}';
+    finishedJSON.push(text);
+}
+
+Where:
+jsonobject = the JSON object containing all the items
+finishedJSON = the resulting JSON for weaponTypesList
