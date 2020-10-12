@@ -5,7 +5,7 @@ const fs = require('fs'); // Used to load local files
 const Fuse = require('fuse.js'); // Used for fuzzy search
 
 // Local files
-//const spellsdata = JSON.parse(fs.readFileSync('spells.json'));
+const spellsdata = JSON.parse(fs.readFileSync('spells.json')); // Replaced by a url request in more recent versions, reverted back in github due to copyright
 const guns = JSON.parse(fs.readFileSync('ranged.json'));
 const wepTypes = JSON.parse(fs.readFileSync('weaponTypesList.json'));
 const melees = JSON.parse(fs.readFileSync('melee.json'));
@@ -17,6 +17,7 @@ var spellsdata = "";
 var color;
 var waitMsg = [];
 
+/* Disabled due to copyrights
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest; // Loads spells off THT
 const xmlhttp= new XMLHttpRequest();
 
@@ -27,9 +28,9 @@ xmlhttp.onreadystatechange=function()
 		spellsdata = JSON.parse(xmlhttp.responseText);
 	}
 }
-//xmlhttp.open("GET", "[url removed due to copyright vulnerability]", false );
+xmlhttp.open("GET", "[url removed due to copyright vulnerability]", false );
 xmlhttp.send();    
-
+*/
 
 client.on('ready', () => {
  console.log(`Logged in as ${client.user.tag}! *Weeeeeeee*`);
