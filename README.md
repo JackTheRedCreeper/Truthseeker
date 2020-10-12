@@ -22,4 +22,8 @@ First, the bot looks into weaponTypesList.json, a local file that stores each it
 
 For example: You type !thtweapon Laser Pistol Azimuth. The bot looks into weaponTypesList.json and sees that it's a Small Arm. It then looks into ranged.json and fetches all the info of Laser Pistol Azimuth.
 
-!thtspell is a different command because their results are different.
+!thtspell is a different command because its results are different.
+
+
+Invite the bot to your server! 
+https://discordapp.com/oauth2/authorize?client_id=667694501598461990&scope=bot
